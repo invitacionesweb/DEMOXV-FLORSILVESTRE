@@ -145,7 +145,7 @@ audio::-webkit-media-controls-current-time-display {
     .arrowdoble {
         width: 60px;
         margin: auto;
-        margin-top:-0px;
+        margin-top:-90px;
         display: block;
         animation: bounce;
         animation-duration:5s;
