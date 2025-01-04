@@ -41,7 +41,7 @@ header {
 .parallax {
     position: relative;
     height: 100vh; /* Ocupa toda la pantalla */
-    background-image: url(./img/namephoneback.png); /* Cambia la imagen */
+    background-image: url(./img/backgrounddesktop.png); /* Cambia la imagen */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,6 +410,15 @@ footer img {
         background-size: cover;
         
     }
+    .parallax {
+        position: relative;
+        height: 100vh; /* Ocupa toda la pantalla */
+        background-image: url(./img/namephoneback.png); /* Cambia la imagen */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    
     .ubicacion {
         flex-direction: column;
     }
