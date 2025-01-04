@@ -15,9 +15,8 @@
     <title>Olivia</title>
 </head>
 <body>
-    <header>
+    <header class="parallax" id="parallax">
        <div class="frenteflores">
-        <a  class="boton" target="_blank"  href="https://calendar.app.google/PsYkgcL5o4Uyz7M27">AGENDAR</a>
 
        </div>
        <img class="arrowdoble" src="./figuras/icons8-doble-izquierda-64.png" alt="">
@@ -34,6 +33,7 @@
     </div>
     
     <div class="contador">
+     
         <div class="bloque">
           <div id="dias" class="numero"></div>
           <div class="etiqueta">Días</div>
@@ -65,7 +65,7 @@
             <a class="boton" href="https://www.google.com/maps/dir//Janos+San+Telmo,+Per%C3%BA+338,+C1063+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6118773,-58.6630869,11z/data=!4m18!1m8!3m7!1s0x95bccbce7c872ecb:0xc1513587688ba57e!2sJanos+San+Telmo!8m2!3d-34.6118796!4d-58.3747124!15sCg1qYW5vcyBldmVudG9zIgOIAQGSARZmdW5jdGlvbl9yb29tX2ZhY2lsaXR54AEA!16s%2Fg%2F11lh3vygjj!4m8!1m0!1m5!1m1!1s0x95bccbce7c872ecb:0xc1513587688ba57e!2m2!1d-58.3747124!2d-34.6118796!3e3?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D">CÓMO LLEGAR</a>
         </div>
     </div>
-<!--
+
         <div class="galeria1">
         <img class="f1" src="./img/2.png" alt="FOTO">
         <img class="f4" src="./img/2.png" alt="FOTO">
@@ -73,7 +73,7 @@
         <img class="f4" src="./img/2.png"  alt="FOTO">
     </div>
 
--->
+
     <div   class="dresscode">
         <img class="icon"  src="./figuras/monno.png" alt="fiesta">
         <h2  >DRESS CODE - ELEGANTE</h2>
@@ -102,7 +102,7 @@
         <br>
     </div>
 
-<!--
+
         <div class="galeria1">
         <img class="f1" src="./img/2.png" alt="FOTO">
         <img class="f4" src="./img/2.png" alt="FOTO">
@@ -110,7 +110,7 @@
         <img class="f4" src="./img/2.png"  alt="FOTO">
     </div>
 
--->
+
 
 <div  class="ubicacion-bloque tres" >
     <img class="icon" src="./figuras/asistencia.png" alt="asistencia">
@@ -122,7 +122,7 @@
         <a  class="boton1" target="_blank"  href="https://calendar.app.google/PsYkgcL5o4Uyz7M27">AGENDAR</a>
     </div>
 </div>
-        <div class="caja">
+    <div class="caja">
         <div class="ubicacion-bloque dos" >
             <img class="icon"  src="./figuras/giftcard.png" alt="giftcard">
             <h2>MESA DE REGALOS</h2>
@@ -141,7 +141,7 @@
     </div>¯
 
 
-<!--
+
         <div class="galeria1">
         <img class="f1" src="./img/2.png" alt="FOTO">
         <img class="f4" src="./img/2.png" alt="FOTO">
@@ -149,7 +149,7 @@
         <img class="f4" src="./img/2.png"  alt="FOTO">
     </div>
 
--->
+
     <div class="end">
       <div class="end-names">
         <img src="./figuras/endnames.png" alt="">
@@ -177,6 +177,17 @@
         </div>
         
      </footer>
+     <script>
+      const parallax = document.getElementById("parallax");
+  
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        parallax.style.backgroundPositionY = `${scrollY * 0.5}px`; /* Ajusta la velocidad con 0.5 */
+      });
+    </script>
+   
+
+
      <script>
 
         function copyToClipboard(text) {
