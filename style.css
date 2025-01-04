@@ -67,7 +67,7 @@ margin-top: 60px;
     cursor: pointer;
     animation: bounce;
     animation-duration:2s;
-    animation-iteration-count:infinite;
+    animation-iteration-count: unset;
 }
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -145,7 +145,7 @@ audio::-webkit-media-controls-current-time-display {
     .arrowdoble {
         width: 60px;
         margin: auto;
-        margin-top:-90px;
+        margin-top:-0px;
         display: block;
         animation: bounce;
         animation-duration:5s;
@@ -209,7 +209,7 @@ audio::-webkit-media-controls-current-time-display {
    flex-direction: column;
    padding: 20px 0;
    gap: 10px;
-   background-image: url(./img/box.png);
+   background-image: url(./img/box.png); /* Cambia la imagen */
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -246,12 +246,15 @@ audio::-webkit-media-controls-current-time-display {
 }
 .galeria1 {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    display: flex;
+      gap: 2px;
     
 }
 .galeria1 img {
     width: 25vw;
+  
+
 }
 
 .dresscode {
