@@ -206,7 +206,7 @@ audio::-webkit-media-controls-current-time-display {
    display: flex;
    align-items: center;
    justify-content: center;
-   flex-direction: column;
+   flex-direction: row;
    padding: 20px 0;
    gap: 10px;
    background-image: url(./img/box.png); /* Cambia la imagen */
@@ -409,6 +409,9 @@ footer img {
         background-repeat: no-repeat;
         background-size: cover;
         
+    }
+    .ubicacion {
+        flex-direction: column;
     }
     .frenteflores {
         width: 100%;
